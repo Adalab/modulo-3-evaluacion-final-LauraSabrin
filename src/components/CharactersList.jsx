@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 function CharactersList({ filteredNames }) {
 
-  const renderCharacters = filteredNames.map((character) => {
+  const renderCharacters = filteredNames.map((character, i) => {
     return (
-      <li className="sectionChar__card" key={character.id}>
+      <li className="sectionChar__card" key={i}>
         <Link to={`/details/${character.id}`} className="link">
           <SingleCharacter character={character} id={character.id} />
         </Link>

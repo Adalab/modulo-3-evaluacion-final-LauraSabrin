@@ -3,7 +3,7 @@ import gryffindor from "../images/gryffindor.jpg";
 import hufflepuff from "../images/hufflepuff.jpg";
 import ravenclaw from "../images/ravenclaw.png";
 import slytherin from "../images/slytherin.jpg";
-function SingleCharacter({ character, id }) {
+function SingleCharacter({ character}) {
   let houseShield;
   let houseClass;
   if (character.house === "Gryffindor") {
@@ -21,7 +21,7 @@ function SingleCharacter({ character, id }) {
   }
 
   return (
-    <article className={houseClass} key={id}>
+    <article className={houseClass}>
       <img
         className="sectionChar__card--image" 
         src={character.image || houseShield}
@@ -35,7 +35,6 @@ function SingleCharacter({ character, id }) {
 }
 SingleCharacter.propTypes = {
   character: PropTypes.object,
-  id: PropTypes.string,
 };
 
 export default SingleCharacter;
