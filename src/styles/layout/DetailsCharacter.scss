@@ -1,0 +1,83 @@
+@import "../core/Variables.scss";
+@import "../core/Mixins.scss";
+
+.linkWand {
+  text-decoration: none;
+}
+.divBack {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+}
+.divBack:hover {
+  transform: scale(2);
+}
+.divBack__p {
+  text-align: center;
+  font-family: $textFamily;
+  font-size: 3rem;
+  text-decoration: none;
+}
+.divBack__p:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.divBack__p:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+.divBack__img {
+  width: 30px;
+  height: 30px;
+}
+
+.sectionCardGryffindor{
+  @include detailCard;
+  border: 8px solid  rgb(66, 3, 3);
+}
+.sectionCardSlytherin{
+  @include detailCard;
+  border: 8px solid rgb(4, 73, 25);
+}
+.sectionCardHufflepuff{
+  @include detailCard;
+  border: 8px solid  rgb(243, 208, 7);
+}
+.sectionCardRavenclaw{
+  @include detailCard;
+  border: 8px solid rgb(28, 41, 226);
+}
+.characterCard{
+  @include deadAlive;
+}
+.alive {
+   background-image: url("../../images/map.jpg");
+ 
+  .status{
+    color:green;
+    }
+}
+.dead {
+  opacity: 0.6;
+  background-image: url("../../images/dead.avif");
+  .status{
+      color: red;
+    }
+}
+.house{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shieldIcon{
+  align-self: center;
+  width: 35px; 
+  align-self: flex-end;
+}
+
+
+
+

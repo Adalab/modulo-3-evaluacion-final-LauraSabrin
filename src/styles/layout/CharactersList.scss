@@ -1,0 +1,78 @@
+@import "../core/Variables.scss";
+
+.sectionChar {
+  width: 90vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 15px;
+  margin: 15px 5px 15px;
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+    border: 2px solid rgb(110, 110, 108);
+    border-radius: 5px;
+    @media (min-width: 1200px) {
+      width: 9rem;
+    }
+    &--image {
+      width: 6rem;
+      height: 8rem;
+    }
+    &--nameTitle {
+      font-family: $textFamily;
+      font-size: $textSize;
+      color: #000;
+    }
+    &--houseP,
+    &--specieP {
+      font-family: $textFamily;
+      color: #000;
+    }
+  }
+}
+.sectionChar__card:hover {
+  transform: scale(2) rotateX(10deg);
+  border: 1px solid rgba(75, 75, 63, 0.459);
+  background-color: rgba(240, 240, 42, 0.082);
+  border-radius: 5px;
+ 
+}
+
+.link {
+  text-decoration: none;
+}
+.sectionChar__card .gryffindor:hover{
+    border: 3px solid rgb(66, 3, 3);
+    background-color: rgba(253, 187, 5, 0.63);
+    border-radius: 5px;
+}
+
+.sectionChar__card .slytherin:hover{
+    border: 3px solid rgb(4, 73, 25);
+    background-color: rgba(24, 24, 23, 0.836);
+    border-radius: 5px;
+}
+
+.sectionChar__card .hufflepuff:hover{
+    border: 3px solid rgb(243, 208, 7);
+    background-color: rgba(24, 24, 23, 0.836);
+    border-radius: 5px;
+}
+
+
+.sectionChar__card .ravenclaw:hover{
+    border: 3px solid rgb(28, 41, 226);
+    background-color: rgba(175, 129, 1, 0.836);
+    border-radius: 5px;
+}

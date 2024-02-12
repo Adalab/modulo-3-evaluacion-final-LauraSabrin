@@ -1,0 +1,15 @@
+@import './core/Reset.scss';
+@import './core/Variables.scss';
+html {
+    height: 100vh;
+    background: rgb(110,113,113)linear-gradient(0deg, rgba(110,113,113,1) 0%, rgba(10,10,10,1) 85%);
+    
+    background-repeat: no-repeat;
+  }
+  
+  body {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,40 @@
+@import "../core/Variables.scss";
+
+.headerTitle {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  &__img {
+    width: 90vw;
+    height: 25vh;
+    margin-bottom: 1rem;
+    @media (min-width: 1200px) {
+      width: 50vw;
+      height: 20vh;
+    }
+  }
+}
+
+.header_ul {
+  list-style: none;
+}
+.header_ul--li {
+  font-family: $textFamily;
+  font-size: 18px;
+}
+
+.header_ul--link {
+  text-decoration: none;
+  color: green;
+}
+
+.header_ul--link:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+.header_ul--link:hover {
+  color: yellow;
+  text-decoration: none;
+}
